@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <a href="/read">View available Trains</a>
+    <a href="/search">Search Trains available between two stations</a>
+    <h3 class="title">Add New Train</h3>
+    <div class="main">
+        <form action="/create" method="post">
+            <input type="text" name="source" id="sstation" placeholder="Source Station">
+            <input type="text" name="destination" id="dstation" placeholder="Destination Station">
+            <input type="time" name="uptime" id="stime" placeholder="Starting time">
+            <input type="time" name="dntime" id="dtime" placeholder="Ending time">
+            <input type="submit" name="submit" id="submit" value="Add Train">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/readstyle.css">
+</head>
+<body>
+    <a href="/" id="link">Go to Home</a>
+    <% if (trains.length==0) { %>
+        <p> No train details present</p>
+        <%} else { %>
+            <% trains.forEach((val)=>{
+                %>
+                <div class="first">
+                    <pre>   <%=`${val.source}` %>                                                                  To                                                                                <%=`${val.dest}`%></pre>
+                    <pre>   Departure Time:-  <%=`${val.deptime}`%></pre>
+                    <pre>   Reaching Time:-  <%=`${val.retime}`%></pre>
+                    <a href="/edit/<%=val._id%>" id="hello">Edit Details</a>
+                    <a href="/delete/<%=val._id%>" id="hi">Delete Details</a>
+                </div>
+                <%
+            }) %>
+        <% } %>
+</body>
+</html>

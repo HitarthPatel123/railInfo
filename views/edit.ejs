@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>#submit{
+    background-color: orange;
+    }</style>
+</head>
+<body>
+    <a href="/read">View available Trains</a>
+    <h3 class="title">Update train details</h3>
+    <div class="main">
+        <form action="/update/<%=trains[0]._id%>" method="post">
+            <input type="text" name="source" id="sstation" placeholder="Source Station" value="<%=trains[0].source%>">
+            <input type="text" name="destination" id="dstation" placeholder="Destination Station" value="<%=trains[0].dest%>">
+            <input type="time" name="uptime" id="stime" placeholder="Starting time" value="<%=trains[0].deptime%>">
+            <input type="time" name="dntime" id="dtime" placeholder="Ending time" value="<%=trains[0].retime%>">
+            <input type="submit" name="submit" id="submit" value="Update Train">
+        </form>
+    </div>
+</body>
+</html>

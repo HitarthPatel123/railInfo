@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            margin-top: 50px;
+            margin-left: 50px;
+            color: rgb(40, 40, 205);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(45, 43, 43);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #main{
+            margin:50px;
+        }
+
+        #submit{
+            padding: 3px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/">Go to Home</a>
+    <a href="/read">View available Trains</a>
+    <div id="main">
+        <form action="/searchAndRead" method="post" >
+            <input type="text" name="sstation" id="sstation" placeholder="Enter Source Station">
+            <input type="text" name="dstation" id="dstation" placeholder="Enter destination Station">
+            <input type="submit" value="Find Trains" id="submit">
+        </form>
+    </div>
+   
+</body>
+
+</html>
