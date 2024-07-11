@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(45, 43, 43);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .main {
+            margin: 50px;
+        }
+
+        #submit {
+            padding: 7px;
+            background-color: blue;
+        }
+
+        ::placeholder {
+            color: white;
+            opacity:0.7;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Create Account</h1>
+    <form action="/createAccount" method="post">
+        <div class="flex main">
+            <div class="formd"><input type="text" name="Username" id="Username" placeholder="Username"></div>
+            <div class="formd"><input type="text" name="email" id="email" placeholder="Email"></div>
+            <div class="formd"><input type="password" name="password" id="password" placeholder="password"></div>
+            <div class="formd"><input type="submit" value="Create Account" id="submit"></div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -58,4 +58,8 @@ app.post('/searchAndRead',async function(req,res){
     res.render("read",{trains:details});
 })
 
+app.get('/test',function(req,res){
+    res.render("create");
+})
+
 app.listen(3000);
